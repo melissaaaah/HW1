@@ -5,8 +5,8 @@
 package occ.cs272.h01;
 
 /**
- * @author <your OCC login name such as <mhuynh76>
- * @version <the date>
+ * @author <mhuynh76>
+ * @version <September 9, 2019>
  * 
  */
 public class IceCreamCone

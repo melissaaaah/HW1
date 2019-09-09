@@ -7,8 +7,8 @@ package occ.cs272.h01;
 import java.util.Scanner;
 
 /**
- * @author <your OCC login name such as sgilbert>
- * @version <the date>
+ * @author <mhuynh76>
+ * @version <September 8, 2019>
  *
  */
 public class Grade
