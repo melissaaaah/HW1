@@ -5,14 +5,14 @@
 package occ.cs272.h01;
 
 /**
- * @author <mhuynh76>
+ * @author <Melissa Huynh>
  * @version <September 8, 2019>
  *
  */
 public class Sequence
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your login ID here";
+    public static final String STUDENT = "mhuynh76";
     public static final String ASSIGNMENT = "H01-D";
     
     private int[] array;
@@ -27,7 +27,23 @@ public class Sequence
     }
     
     // TODO: Write the three versions of slice() here
-    
+
+    public int[] slice(int start) 
+    {
+    	int inc = 0;
+    	int[] result = new int [array.length];
+    	if(start < 0) 
+    	{
+    		result[inc] = a[array.length - 1];
+    	}
+    	else
+    	{
+    		
+    	}
+    }
+    Sequence slice(int start, int end);
+    Sequence slice(int start, int end, int step);
+
     
     
     
