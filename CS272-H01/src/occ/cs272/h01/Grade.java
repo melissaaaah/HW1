@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Grade
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your OCC login name here";
+    public static final String STUDENT = "mhuynh76";
     public static final String ASSIGNMENT = "H01-C";
     
     private String grade;
@@ -35,9 +35,39 @@ public class Grade
     public double getNumericGrade() 
     {
         //TODO Complete this method
+        double numericGrade = 0;
         
+        switch(grade)
+        {
+        case "A" : case "a+" : case"a" : case "A+" :numericGrade = 4.0;
+        break;
+        case "a-" : case "A-" :numericGrade = 3.7;
+        break;
+        case "b+" : case "B+" :numericGrade = 3.3;
+        break;
+        case "b" : case "B" : numericGrade = 3.0;
+        break;
+        case "b-" : case "B-" :numericGrade = 2.7;
+        break;
+        case "c+" : case"C+" : numericGrade = 2.3;
+        break;
+        case "c" : case"C" : numericGrade = 2.0;
+        break;
+        case "c-" : case "C-" : numericGrade = 1.7; 
+        break;
+        case "d+" : case "D+" : numericGrade = 1.3;
+        break; 
+        case "d" : case "D" :numericGrade = 1.0;
+        break;
+        case "d-" : case "D-" :numericGrade = 0.7;
+        break; 
+        case "f" : case "F" : numericGrade = 0.0;
+       
+        default: numericGrade = -1.0;
+        break;
+        }
         
-        return 10; 
+        return numericGrade; 
     }
     
     /**
