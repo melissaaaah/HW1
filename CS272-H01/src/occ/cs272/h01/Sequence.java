@@ -30,11 +30,21 @@ public class Sequence
 
     public Sequence slice(int start) 
     {
-    	int[] a = new int[1];
+    	int[] a = new int[array.length];
     	
-    	for(int i = 0; i<a.length; i++)
+    	if(start < 0)
     	{
-    	    a[i] = a[a.length + start];
+    	    for(int i = array.length + start; i<a.length; i++)
+    	    {
+    	        a[i] = a[a.length + start];
+    	    }
+    	}
+    	else
+    	{
+    	    for(int i = start; i<a.length + start; i++)
+    	    {
+    	        a[i] = a[start];
+    	    }
     	}
     	return new Sequence(a);
     }
